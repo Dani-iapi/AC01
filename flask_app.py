@@ -9,3 +9,6 @@ app = Flask(__name__)
 def hello_world():
     return 'AC 01!'
 
+@app.route('/home')
+def inicio():
+    return render_template ('inicio.html')
